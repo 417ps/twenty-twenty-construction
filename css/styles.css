@@ -8,16 +8,16 @@
 }
 
 :root {
-    /* Color Palette - Professional Construction Industry */
-    --primary-navy: #1a365d;
-    --secondary-blue: #2b6cb0;
-    --accent-gold: #d69e2e;
-    --neutral-gray: #4a5568;
-    --light-gray: #f7fafc;
+    /* Color Palette - Safety First Theme */
+    --primary-navy: #334155;
+    --secondary-blue: #64748b;
+    --accent-gold: #ea580c;
+    --neutral-gray: #64748b;
+    --light-gray: #f8fafc;
     --white: #ffffff;
-    --text-dark: #2d3748;
-    --text-light: #718096;
-    --safety-orange: #ff6b35;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --safety-orange: #ea580c;
     
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
