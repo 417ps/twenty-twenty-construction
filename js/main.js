@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    // Add fade-in class to elements and observe them
-    const fadeElements = document.querySelectorAll('.service-card, .expertise-category, .stat, .cert-item');
+    // Add fade-in class to elements and observe them (excluding stats)
+    const fadeElements = document.querySelectorAll('.service-card, .expertise-category, .cert-item');
     fadeElements.forEach(element => {
         element.classList.add('fade-in');
         observer.observe(element);
@@ -273,40 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Statistics Counter Animation
-    function animateCounters() {
-        const stats = document.querySelectorAll('.stat h4');
-        
-        stats.forEach(stat => {
-            const target = parseInt(stat.textContent.replace(/\D/g, ''));
-            const suffix = stat.textContent.replace(/\d/g, '');
-            let current = 0;
-            const increment = target / 50;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                stat.textContent = Math.floor(current) + suffix;
-            }, 50);
-        });
-    }
-    
-    // Trigger counter animation when stats section is visible
-    const statsSection = document.querySelector('.about-stats');
-    if (statsSection) {
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        statsObserver.observe(statsSection);
-    }
+    // Statistics are now static - no animation needed
     
     // Removed problematic parallax effect that was causing scroll issues
     

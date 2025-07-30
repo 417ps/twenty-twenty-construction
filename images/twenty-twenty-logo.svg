@@ -1,0 +1,20 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- "20" in burgundy with shadow -->
+  <text x="150" y="22" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#9ca3af">20</text>
+  <text x="148" y="20" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#7f1d1d">20</text>
+  
+  <!-- "TWENTY" in black with shadow -->
+  <text x="2" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#6b7280">TWENTY</text>
+  <text x="0" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">TWENTY</text>
+  
+  <!-- "CONSTRUCTION" in smaller black -->
+  <text x="110" y="32" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1f2937">CONSTRUCTION</text>
+  
+  <!-- "LLC" in smaller text -->
+  <text x="175" y="45" font-family="Arial, sans-serif" font-size="6" fill="#1f2937">LLC</text>
+  
+  <!-- Decorative lines -->
+  <rect x="0" y="35" width="80" height="2" fill="#1f2937"/>
+  <rect x="0" y="38" width="75" height="1.5" fill="#1f2937"/>
+  <rect x="0" y="41" width="180" height="2" fill="#1f2937"/>
+</svg>
